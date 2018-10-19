@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: mooovi_production
-  username: mooovi
+  username: root
   password: <%= ENV['MOOOVI_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
